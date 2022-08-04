@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Allgemeines/images/logo.jpg" sizes="192x192" />
+	<link rel="shortcut icon" id="SiteIcon" href="Allgemeines/images/logo.jpg" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="Allgemeines/css/desktop.css"> <!-- Hauptdesign -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.dercrafter.de/patrick-hand/patrickhand.css"> <!-- DCN Schriftart CSS -->
+    <link rel="stylesheet" type="text/css" href="Allgemeines/css/ankle-bootstrap.css"> <!-- Anklebootstrap CSS für Tabellen -->
+    <link rel="stylesheet" type="text/css" href="search.css"> <!-- Stylesheet Searchengine -->
+
+    <script src="https://kit.fontawesome.com/72148a9038.js" crossorigin="anonymous"></script> <!-- FontAwsome Icon -->
+    <script type="text/javascript" src="search.js" defer></script> <!-- Searchengine Code -->
+    <script rel="stylesheet" type="text/javascript" href="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <title>mtkp/NEI-Ersatz-LBAH</title>
+</head>
+
+
+<body style="font-family: Patrick Hand;">
+<div id="container">
+        <div id="kopfleiste">
+          <h1><i class="fa-solid fa-wrench"></i> LBAH - NotEnoughItems Ersatz</h1>
+        </div>
+<div class="row">
+	<div class="col-md-2">
+		    <div id="inhalt"> </br>
+			    <p><a href="https://www.mtk-project.de"> <i class="fa-solid fa-globe"></i> MTKP Hauptwebsite</a></p> <br>
+			    <p><b><a href="./"> <i class="fa-solid fa-wrench"></i> NEI-Ersatz</a></b></p>
+			    <p><a href="./kontakt/"> <i class="fa-solid fa-address-book"></i> Kontakt</a></p>
+		    </div>
+	    </div>   
+
+    <div class="col-md-8">
+		<div id="inhalt">
+            <h1>Informationen</h1>
+            <p>Damit ihr ein Craftingrezept findet, gebt den Itemnamen, so wie er im Spiel ist, in die Suchleiste ein. Anschließend wird euch der Kasten angezeigt, indem ihr das Craftingrezept findet. Durch das draufklicken
+                auf das Bild wird euch das Bild in voller Größe geöffnet, sodass ihr das Rezept besser betrachten könnt. <br><br>
+                Für die Vanilla Craftingrezepte empfielt sich die Seite <a href="https://minecraft.tools/de/crafting.php"><u>Minecraft Tools</u></a>. 
+                Hier sind allerdings die Craftingrezepte der neueren Versionen auch, also wundert euch nicht, wenn dort Blöcke sind, die ihr nicht kennt oder in LBAH craften könnt :D
+            </p>
+            <br><br>
+</div></div>
+
+    <div class="col-md-2">
+        <script src="./Allgemeines/scripts/logo-seitenleiste.json"></script>
+        <script> document.writeln(inhalt) </script>
+    </div>
+</div>
+
+    <div class="col-md-2">
+    </div>
+
+    <div class="col-md-8">
+        <br>
+        <div id="inhalt">
+<!-- Search Enginge Anfang -->
+    <div class="search-wrapper"><!-- Suchleiste -->
+        <label for="search"><h2>Itemsuche</h2></label>
+       <input type="search" id="search" placeholder="Modnamen oder Moditem (in Deutsch oder Englisch) hier eingeben" data-search>
+       </div>
+
+    <div><!-- Filter Dropdown -->
+       <select onchange="update()" id="filter">
+           <option value="all">Alle Mods</option>
+           <option value="bp">Backpack</option>
+           <option value="ch">Chisel</option>
+           <option value="cnpc">CustomNPC</option>
+           <option value="dc">Decocraft</option>
+           <option value="fc">Floocraft</option>
+           <option value="hpu">HPU-DAEdition</option>
+           <option value="mc">MineChess</option>
+           <option value="pm">PlantMegaMod</option>
+       </select>
+   </div>
+
+
+   <div class="item-cards" data-item-container></div><!-- in diesem Div befinden sich alle Karten mit den Mods aus der items.json -->
+   <template data-item-template ><!-- template muss nich vormatiert werden -->
+           <div class="card"><!-- box mit Item infos -->
+               <div class="header" data-header></div> <!-- Item Title -->
+               <div class="body" data-body></div> <!-- Englischer Name -->
+               <div class="mod" data-mod></div> <!-- zu welcher Mod das Item gehört -->
+               <div class="img"><a data-link><img data-src width="100" height="100"></a></div> <!-- Rezept Bild -->
+           </div>
+   </template>
+</div>
+</div>
+<!-- Search Enginge Ende -->
+</div></div>
+
+    <div class="col-md-2">
+    </div>
+    
+</div>
+</body>
+</html>

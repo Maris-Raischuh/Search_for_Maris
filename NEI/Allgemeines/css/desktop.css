@@ -1,0 +1,125 @@
+body {
+	margin: 0px;
+	padding: 8px;
+
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans serif";
+	color: #000000;
+	background-image: url("../images/website-bg.png");
+	background-size: 100% auto;
+}
+
+
+strong {
+	font-weight: bold;
+}
+
+a {
+	color: inherit;
+	font-family: inherit;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 15px;
+}
+
+tr.zweitezeile {
+	background-color: #ffffff;
+}
+
+#inhalt a:link { text-decoration: none }
+#inhalt1 a:link { text-decoration: none }
+#inhaltrc a:link { text-decoration: none }
+
+#container { /* Titel und Hauptcontainer der Seite */
+	width: inherit;
+	max-width:1600px;
+	margin: 0 auto 0 auto;
+}
+
+
+
+#kopfleiste {
+	width: inherit;
+	height: 80px;
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 15px;
+
+	background-color: #51033a;
+	box-shadow: 2px 2px 2px 0px #2d036d;
+}
+
+#kopfleiste h1 {
+	margin: 0px;
+	padding: 0px;
+
+	font-size: 30px;
+	line-height: 80px;
+	color: #ffffff;
+}
+
+
+
+#inhalt {
+	width: auto;
+	height: auto;
+	overflow: hidden; /*Damit das Layout mit float funktioniert*/
+	padding: 10px 15px 10px 15px;
+
+	background-color: #ffffff;
+	box-shadow: 2px 2px 2px 0px #2d036d;
+}
+
+#inhalt h1 {
+	text-align: left;
+	font-size: 30px;
+	line-height: 1.4;
+}
+
+#inhalt h2 {
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.4;
+}
+
+#inhalt h3 {
+	text-align: left;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+#inhalt p {
+	font-size: 17px;
+	line-height: 1.3;
+}
+
+#inhalt pb {
+	font-size: 17px;
+	line-height: 1.3;
+	font-weight: bold;
+}
+
+
+
+#submit {
+	color: #f1f0df;
+	margin-left: 100px;
+}
+
+
+
+input[type=submit] {
+	background-color: #07585e;
+	height: 40px;
+	width: 100px;
+}
+
+input[type=submit]:hover {
+    background-color: #05464b;
+}
+
+/*#inhalt a:active {font-weight: bold;}*/
